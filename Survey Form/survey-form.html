@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Josh C Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help me improve
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age<span class="clue">(optional)</span></label>
+          <input
+            type="number"
+            id="number"
+            name="age"
+            placeholder="Age"
+            min="10"
+            max="99"
+            class="form-control"
+           />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes you relationship with Josh C?</p>
+          <select id="dropdown" name="relationship" class="form-control" required>
+            <option disabled selected value>Select relationship</option>
+            <option value="unknown">Don't know him</option>
+            <option value="acquainted">We're acquanited</option>
+            <option value="quiteWell">Know him quite well</option>
+            <option value="friends">Good friends with him</option>
+            <option value="lifetime">I've known him my whole life</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend Josh C to a friend?</p>
+          <label for="definitely">
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              id="definitely"
+              class="input-radio"
+              checked
+            />Definitely</label>
+          <label for="maybe">
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              id="maybe"
+              class="input-radio"
+              checked
+            />Maybe</label>
+          <label for="not-sure">
+            <input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              id="not-sure"
+              class="input-radio"
+              checked
+            />Not sure</label>
+        </div>    
+        <div class="form-group">
+          <p>
+            What is your favorite part about Josh C?
+          </p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option value="looks">His good looks</option>
+            <option value="charm">His boundless charm</option>
+            <option value="humor">His hysterical humor</option>
+            <option value="hatred">"I actually hate him"</option>
+          </select>
+        </div>      
+        <div class="form-group">
+          <p>
+            What would you like to see Josh C improve?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label for="looks">
+            <input
+              id="looks"
+              name="prefer"
+              value="looks"
+              type="checkbox"
+              class="input-checkbox"
+            />His looks</label>
+          <label for="charm">
+            <input
+              id="charm"
+              name="prefer"
+              value="charm"
+              type="checkbox"
+              class="input-checkbox"
+            />His charm</label>
+          <label for="humor">
+            <input
+              id="humor"
+              name="prefer"
+              value="humor"
+              type="checkbox"
+              class="input-checkbox"
+            />His humor</label>
+          <label for="muscles">
+            <input
+              id="muscles"
+              name="prefer"
+              value="muscles"
+              type="checkbox"
+              class="input-checkbox"
+            />His muscles</label>
+          <label for="perfection">
+            <input
+              id="perfection"
+              name="prefer"
+              value="perfection"
+              type="checkbox"
+              class="input-checkbox"
+            />He is already perfect</label>
+        </div>    
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+           ></textarea>
+        </div>    
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
