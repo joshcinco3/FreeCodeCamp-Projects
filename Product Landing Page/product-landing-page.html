@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <main id="main">
+      <header id="header">
+        <div class="logo">
+          <img
+          id="header-img"
+               src="https://user-images.githubusercontent.com/58441560/98297150-d5441200-1f68-11eb-9ddb-40ce10e477cf.png"
+          alt="superiror detailing logo">
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container"></div>
+
+      <section id="form-section">
+        <h2>Down to the smallest detail</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email address"
+              required>
+          <input type="submit" id="submit" value="Get Started" class="btn">
+        </form>
+      </section>
+
+      <div class="container">
+        <section id="features">
+          <div class="grid">
+            <div class="desc">
+              <h2>Hand Washed</h2>
+              <p>
+                At Superior Detailing, you get what you pay for. All
+                of our detailing technicians wash every vehicle with
+                their own two hands and the finest tools.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="desc">
+              <h2>Quick Turnaround</h2>
+              <p>
+                We know that you haven't got all day to have your car
+                cleaned, so we make sure to keep our washes quick,
+                while still maintaing a deep clean up to our
+                standards.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="desc">
+              <h2>Supercar Shine</h2>
+              <p>
+                With our highly-skilled technicians and our use of
+                excellent products, we'll make your Corolla look like
+                a Supra!
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works">
+          <iframe
+                  id="video"
+                  height="315"
+                  src="https://www.youtube.com/embed/4T50t2BKIRs"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+          </iframe>
+        </section>
+        <section id="pricing">
+          <div class="product" id="exterior">
+            <div class="level">Exterior "Quick" Detail</div>
+            <h2>$40+ depending on size of vehicle</h2>
+            <ol>
+              <li>Prior to washing, vehicle is throughly rinsed to
+                remove as much surface contaminants as possible.</li>
+              <li>Vehicle is then sprayed with foamy shampoo, and
+                rinsed once again.</li>
+              <li>Vehicle is then hand washed using the two bucket
+                method.</li>
+              <li>Tires, windows, and exterior trim are cleaned and
+                protected. Wax is applied to vehicle exterior.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="interior">
+            <div class="level">Interior Detail</div>
+            <h2>$60 depending on size of vehicle</h2>
+            <ol>
+              <li>Vehicle floormats are vaccuumed and shampooed.</li>
+              <li>Vehicle seats and carpets are vaccuumed and
+                throughouly cleaned.</li>
+              <li>All plastic panels and surfaces are cleaned.</li>
+              <li>Paneling and glass or protected with a spray
+                protectant, and a complimentary spray of air
+                freshener is provided.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="combo">
+            <div class="level">Exterior + Interior Detail</div>
+            <h2>$90 minimum</h2>
+            <ol>
+              <li>Includes everything outlined in Exterior and
+                Interior Detail Packages.</li>
+              <li>Option for steam cleaning interior.</li>
+              <li>Option for engine bay detail.</li>
+              <li>Option for ceramic coating exterior.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        </section>
+      </div>
+      <footer>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+      </footer>
+    </main>
+  </body>
+</html>
